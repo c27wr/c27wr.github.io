@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">	
+<style type="text/css">
+	h1{
+		font-family:Chelsea Market ;
+	}
+	p{
+		font-family:Chelsea Market ;
+	}
+</style>
+
+</head>
+<body>
+	<audio id="sound" src="chomp.mp3"></audio>
+<center>
+<h1>making cookies :)</h1>
+<p>click to eat them 😋</p>
+</center>
+	<script type="text/javascript">
+		function makeCookie (){
+			var cookie = document.createElement("div");
+			document.body.appendChild(cookie);
+			cookie.style.width="100px";
+			cookie.style.height="100px";
+			cookie.style.backgroundSize="contain";
+			cookie.style.backgroundImage="url(https://famouscookies.com/wp-content/uploads/2020/11/Famous-Cookie-Cocolate-Chip-21-1600x1600-1.png)";
+			cookie.style.display="inline-block";
+			cookie.style.margin="20px"
+
+		cookie.addEventListener("click", function(){
+			cookie.style.width="100px";
+			cookie.style.height="100px";
+			cookie.style.backgroundImage="url(transparent.png)";
+				sound.play();
+
+
+
+		})
+
+	} // end of makeCookie function//
+
+		setInterval(makeCookie, 100)
+	</script>
+</body>
+</html>

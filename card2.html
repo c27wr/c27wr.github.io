@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	body{
+		background-color:lightyellow;
+	}
+	#videoicon{
+		background-image:url(videoicon.png);
+		width:75px;
+		height:75px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		position: absolute;
+	}
+	#videoicon2{
+		background-image:url(videoicon.png);
+		width:75px;
+		height:75px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		position: absolute;
+	}
+
+	h1{
+		font-family:Chelsea Market;
+		
+	}
+
+	#momfilm{
+		background-image:url(./parents/mama.png) ;
+		width:150px;
+		height:700px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+		margin:10px;
+
+	}
+
+	#momfilm2{
+		background-image:url(./parents/mama2.png) ;
+		width:150px;
+		height:700px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+		margin:10px;
+
+	}
+	#both{
+		background-image:url(./parents/both.png);
+		width:600px;
+		height:700px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+	}
+
+	#dadfilm{
+		background-image:url(./parents/dad.png) ;
+		width:150px;
+		height:700px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+		margin:10px;
+
+	}
+
+	#dadfilm2{
+		background-image:url(./parents/dad2.png) ;
+		width:150px;
+		height:700px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+		margin:10px;
+	}
+
+	.button{
+		width:400px;
+		height:400px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+	}
+</style>
+
+</head>
+<body>
+	<a href="video.html">
+
+		<div id="videoicon"></div>
+	
+	</a>
+	<a href="video.html">
+
+		<div id="videoicon2"></div>
+	
+	</a>
+<center>
+
+<h1>❤ happy thanksgiving! so so so grateful for you ❤</h1>
+
+
+
+
+		<div id="momfilm"></div>
+
+
+		<div id="momfilm2"></div>
+
+	<!-- <a href="">
+		
+		<div class="button" id="mom"></div>
+
+	</a> -->
+		<div id="both"></div>
+
+
+
+	<!-- <a href="ag.html">
+		
+		<div class="button" id="dad"></div>
+
+	</a> -->
+		
+		<div id="dadfilm"></div>
+
+		<div id="dadfilm2"></div>
+
+</center>
+
+
+	<script type="text/javascript">
+		// function showHeart (){
+		// 	var heart = document.createElement("div");
+		// 	document.body.appendChild(heart);
+		// 	heart.style.width="75px";
+		// 	heart.style.height="75px";
+		// 	heart.style.backgroundImage="url(transparent.png)"
+
+
+		// heart.addEventListener("click", function(){
+		// 	heart.style.width="75px";
+		// 	heart.style.height="75px";
+		// 	heart.style.backgroundImage="url(heart.png)";
+
+		
+
+document.addEventListener("click", function makeHeart (event){
+			var heart = document.createElement("div");
+			document.body.appendChild(heart);
+			heart.style.width="70px";
+			heart.style.height="70px";
+			heart.style.backgroundSize="contain";
+			heart.style.backgroundImage="url(heart.png)";
+			heart.style.display="inline-block";
+			heart.style.margin="20px"
+			heart.style.zIndex="10"
+			heart.style.backgroundRepeat = "no-repeat"
+			heart.style.position = "absolute"
+			heart.style.left = event.clientX + "px"
+			heart.style.top = event.clientY + "px"
+
+
+
+
+
+})
+
+
+
+		</script>
+		
+
+</body>
+</html>
