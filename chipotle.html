@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		h1{
+			font-family: Chelsea Market;
+		}
+		.topping{
+			width:100px;
+			height:100px;
+			background-size: contain;
+			display: inline-block;
+			background-repeat:no-repeat ;
+		}
+		#whiterice{
+			background-image:url(./chipotle/whiterice.png);
+		}
+		#brownrice{
+			background-image:url(./chipotle/brown-rice.png);
+		}
+		#pintobeans{
+			background-image:url(./chipotle/pintobeans.png);
+		}
+		#blackbeans{
+			background-image:url(./chipotle/blackbeans.png);
+		}
+		#carnitas{
+			background-image:url(./chipotle/carnitas.png);
+		}
+		#steak{
+			background-image:url(./chipotle/steak.png);
+		}
+		#chicken{
+			background-image:url(./chipotle/chicken.png);
+		}
+		#barbacoa{
+			background-image:url(./chipotle/barbacoa.png);
+		}
+		#sofritas{
+			background-image:url(./chipotle/sofritas.png);
+		}
+		#guacamole{
+			background-image:url(./chipotle/guacamole.png);
+		}
+		#cheese{
+			background-image:url(./chipotle/cheese.png);
+		}
+		#corn{
+			background-image:url(./chipotle/corn.png);
+		}
+		
+		#bowl{
+			width:500px;
+			height:500px;
+			background-size: contain;
+			background-image:url(./chipotle/bowl.png);
+		}
+
+
+
+
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+<center>
+<h1>make a chipotle bowl 😋</h1>
+</center>
+<!-- <h1>pick your rice:</h1> -->
+<!-- rice -->
+<div id="whiterice" class="topping"></div>
+<div id="brownrice" class="topping"></div>
+
+<!-- beans -->
+<!-- <h1>pick your beans:</h1> -->
+<div id="pintobeans" class="topping"></div>
+<div id="blackbeans" class="topping"></div>
+
+<!-- meat -->
+<!-- <h1>pick your meat:</h1> -->
+<div id="carnitas" class="topping"></div>
+<div id="steak" class="topping"></div>
+<div id="chicken" class="topping"></div>
+<div id="barbacoa" class="topping"></div>
+<div id="sofritas" class="topping"></div>
+
+<!-- toppings -->
+<!-- <h1>pick your toppings:</h1> -->
+<div id="guacamole" class="topping"></div>
+<div id="cheese" class="topping"></div>
+<div id="corn" class="topping"></div>
+
+<center>
+<div id="bowl"></div>
+</center>
+
+<script type="text/javascript">
+	var topping;
+
+	whiterice.addEventListener("click", function(){
+		topping = "whiterice.png"
+		console.log(topping)
+
+	})
+	brownrice.addEventListener("click", function(){
+		topping = "brownrice.png"
+		console.log(topping)
+
+	})
+	pintobeans.addEventListener("click", function(){
+		topping = "pintobeans.png"
+		console.log(topping)
+
+	})
+	blackbeans.addEventListener("click", function(){
+		topping = "blackbeans.png"
+		console.log(topping)
+
+	})
+	carnitas.addEventListener("click", function(){
+		topping = "carnitas.png"
+		console.log(topping)
+
+	})
+	steak.addEventListener("click", function(){
+		topping = "steak.png"
+		console.log(topping)
+
+	})
+	chicken.addEventListener("click", function(){
+		topping = "chicken.png"
+		console.log(topping)
+
+	})
+
+	barbacoa.addEventListener("click", function(){
+		topping = "barbacoa.png"
+		console.log(topping)
+
+	})
+	sofritas.addEventListener("click", function(){
+		topping = "sofritas.png"
+		console.log(topping)
+
+	})
+	guacamole.addEventListener("click", function(){
+		topping = "guacamole.png"
+		console.log(topping)
+
+	})
+	cheese.addEventListener("click", function(){
+		topping = "cheese.png"
+		console.log(topping)
+
+	})
+	corn.addEventListener("click", function(){
+		topping = "corn.png"
+		console.log(topping)
+
+	})
+
+	document.addEventListener("click",
+		function makeDiv (event){
+			var bowlTopping = document.createElement('div');
+			document.body.appendChild(bowlTopping)
+			bowlTopping.classList.add('topping')
+			bowlTopping.style.position = "absolute"
+			bowlTopping.style.left = event.clientX-50 +"px"
+			bowlTopping.style.top = event.clientY-50 +"px"
+			// bowlTopping.style.width = "100px"
+			// bowlTopping.style.heigt = "100px"
+			bowlTopping.style.backgroundImage="url(./chipotle/"+ topping + ")"
+		}
+
+		)
+</script>
+</body>
+</html>

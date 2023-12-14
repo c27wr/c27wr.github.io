@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#a1{
+		background-image:url(./parents/a1.png);
+	}
+	
+	#a3{
+		background-image:url(./parents/a3.png);
+		width:500px;
+		height:400px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+
+
+	}
+	#a4{
+		background-image:url(./parents/a4.png);
+	}
+	#a5{
+		background-image:url(./parents/a5.png);
+	}
+	#a6{
+		background-image:url(./parents/a6.png);
+	}
+	#a7{
+		background-image:url(./parents/a7.png);
+	}
+	#a8{
+		background-image:url(./parents/a8.png);
+		width:560px;
+		height:400px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+		
+	}
+	#a9{
+		background-image:url(./parents/a9.png);
+	}
+	body{
+		background-color: lightpink;
+	}
+
+	.box{
+/*		width:200px;*/
+		height:250px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		background-position: center;
+/*		border-radius: 70%;*/
+		width: 200px;
+  		aspect-ratio: 1;
+  		--_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  		-webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  		clip-path: polygon(-42% 0,50% 91%, 142% 0);
+
+	}
+</style>
+</head>
+<body>
+<center>
+	<h1>happy thanksgiving! grateful for you always ❤ love you to the 🌙 and back </h1>
+
+	<div id="a1" class="box"></div>
+	<div id="a4" class="box"></div>
+	<div id="a5" class="box"></div>
+	<div id="a6" class="box"></div>
+	<div id="a7" class="box"></div>
+	<div id="a9" class="box"></div>
+
+	<div id="a3" ></div>
+	<div id="a8" ></div>
+	</center>
+<script type="text/javascript">
+
+document.addEventListener("click", function makeHeart (event){
+			var heart = document.createElement("div");
+			document.body.appendChild(heart);
+			heart.style.width="70px";
+			heart.style.height="70px";
+			heart.style.backgroundSize="contain";
+			heart.style.backgroundImage="url(heart.png)";
+			heart.style.display="inline-block";
+			heart.style.margin="20px"
+			heart.style.zIndex="10"
+			heart.style.backgroundRepeat = "no-repeat"
+			heart.style.position = "absolute"
+			heart.style.left = event.clientX + "px"
+			heart.style.top = event.clientY + "px"
+
+
+
+
+
+})
+
+
+
+		</script>
+</body>
+</html>
