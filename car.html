@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+	#golden{
+		width:250px;
+		height:275px;
+		background-image:url(movinggolden.png);
+		background-size:contain;
+		position:relative;
+		left:650px;
+		transition:.1;
+	}
+	#treat{
+		width:150px;
+		height:150px;
+		background-image:url(treat.png);
+		background-size:contain;
+		position: absolute;
+		left:10px;
+		top:30px;	}
+	p{
+		font-family:Chelsea Market;
+	}
+	</style>
+</head>
+<body>
+<center>
+<p>collect the treats 🐾🦴</p>
+</center>
+	<div id='golden'></div>
+	<div id='treat'></div>
+<script type="text/javascript">
+	var right = 700
+
+	document.addEventListener("keypress",function(event){
+		right=right-10
+		console.log(right)
+		golden.style.left = right+'px'
+
+	if (right<10){
+		golden.style.backgroundImage = "url(goldenlicking1.png)"
+		golden.style.width = "250px"
+		golden.style.height = "275px"
+		treat.style.backgroundImage= "url()"
+	}
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		p{
+			font-size: 60px;
+			font-family:Chelsea Market;
+			color: black;
+
+		}
+
+		/*#box2 {
+			width: 200px;
+			height: 200px;
+			background-color:darkseagreen;
+			background-repeat: no-repeat;
+			display:inline-block;
+			position:relative;
+			top:20%;
+		}
+*/
+
+		#box {
+			font-size:70px;
+			font-family:Chelsea Market;
+			position:relative;
+			top:20%;
+			background-color:lightpink;
+			width: 800px;
+			height: 400px;
+			color: white;
+			display:inline-block;
+
+			
+		}
+
+		.text{
+			width:90%;
+			height:200px;
+/*			background-color:red;*/
+			position:relative;
+			top:10%;
+
+		}
+
+		
+
+	</style>
+
+
+</head>
+<body>
+
+	<center>
+
+		<p>click to generate a random joke</p>
+		<div id="box">
+
+		</div>
+
+		<div id="box2">
+
+		</div>
+	</center>
+
+<script type="text/javascript">
+
+
+
+	var myJokes = ["What do you call a well-balanced horse?", "Why did the bicycle fall over?", "What lights up a soccer stadium?", "What did the drummer name her twin daughters?", "What do sprinters eat before they race?"]
+
+	var myAnswers = ["Stable", "It was two tired", "A soccer match", "Anna 1, Anna 2.", "Nothing. They fast."]
+
+	var randomNumber;
+
+	function answer (){
+		alert(myAnswers[randomNumber])
+	}
+	
+
+		document.addEventListener("click", function(){
+
+
+			 randomNumber = Math.round(Math.random()*4);
+			box.innerText = myJokes[randomNumber];
+			setTimeout(answer, 1600);
+			
+			// text2.innerText=myAnswers[randomNumber];
+			console.log(randomNumber)
+		})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+	body{
+		background-color: LightSteelBlue;
+	}
+	#golden{
+		width:300px;
+		height:325px;
+		background-image:url(movinggolden.png);
+		background-size:contain;
+		position:relative;
+		left:1000px;
+		transition:.1;
+	}
+	#treat{
+		width:200px;
+		height:200px;
+		background-image:url(treat.png);
+		background-size:contain;
+		position: absolute;
+		left:10px;
+		top:80px;	}
+	p{
+		font-size:30px;
+		font-family:Chelsea Market;
+	}
+	</style>
+</head>
+<body>
+<center>
+<p>press keys to collect the treats 🐾🦴</p>
+</center>
+	<div id='golden'></div>
+	<div id='treat'></div>
+<script type="text/javascript">
+	var right = 1000
+	
+
+	document.addEventListener("keypress",function(event){
+		if (event.key=="ArrowRight"){
+			right=right-10
+			golden.style.left = right + "px"
+		}
+
+
+		right=right-10
+		console.log(right)
+		golden.style.left = right+'px'
+
+	if (right<10){
+		golden.style.backgroundImage = "url(goldenlicking1.png)"
+		golden.style.width = "300px"
+		golden.style.height = "325px"
+		treat.style.backgroundImage= "url()"
+	}
+	})
+</script>
+</body>
+</html>

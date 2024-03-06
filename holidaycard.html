@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Nosifer&family=Quicksand:wght@300&family=Rock+Salt&family=Shadows+Into+Light&family=Wavefont:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		h1{
+			font-family: Chelsea Market;
+		}
+		body{
+			background-color: lightblue;
+		}
+		.part{
+			width:150px;
+			height:150px;
+			background-size: contain;
+			display: inline-block;
+			background-repeat:no-repeat ;
+		}
+		#snowball{
+			background-image:url(snowball.png);
+
+		}
+		#snowball2{
+			background-image:url(snowball.png);
+			width:200px;
+			height:200px;
+		}
+		
+		#snowball3{
+			background-image:url(snowball.png);
+			width:250px;
+			height:250px;
+		
+		}
+		#carrot{
+			background-image:url(carrot.png);
+		}
+		#eyes{
+			background-image:url(eyes.png);
+		}
+		#stones{
+			background-image:url(stones.png);
+			width:75px;
+			height:75px;
+		}
+		#stick1{
+			background-image:url(stick1.png);
+		}
+		#stick2{
+			background-image:url(stick2.png);
+		}
+	
+
+
+
+
+
+
+	</style>
+	<title></title>
+</head>
+<body>
+<center>
+<h1>build a snowman ☃️</h1>
+
+<!-- <h1>pick your rice:</h1> -->
+<!-- rice -->
+<div id="snowball" class="part"></div>
+<div id="snowball2" class="part"></div>
+
+<!-- beans -->
+<!-- <h1>pick your beans:</h1> -->
+<div id="snowball3" class="part"></div>
+<div id="carrot" class="part"></div>
+
+<!-- meat -->
+<!-- <h1>pick your meat:</h1> -->
+<div id="eyes" class="part"></div>
+<div id="stones" class="part"></div>
+<div id="stick1" class="part"></div>
+<div id="stick2" class="part"></div>
+</center>
+
+<center>
+<div id="bowl"></div>
+</center>
+
+<script type="text/javascript">
+	var part;
+
+	snowball.addEventListener("click", function(){
+		part = "snowball.png"
+		console.log(part)
+
+	})
+	snowball2.addEventListener("click", function(){
+		part = "snowball2.png"
+		console.log(part)
+
+	})
+	snowball3.addEventListener("click", function(){
+		part = "snowball3.png"
+		console.log(part)
+
+	})
+	carrot.addEventListener("click", function(){
+		part = "carrot.png"
+		console.log(part)
+
+	})
+	stones.addEventListener("click", function(){
+		part = "stones.png"
+		console.log(part)
+
+	})
+	stick1.addEventListener("click", function(){
+		part = "stick1.png"
+		console.log(part)
+
+	})
+	stick2.addEventListener("click", function(){
+		part = "stick2.png"
+		console.log(part)
+
+	})
+
+	document.addEventListener("click",
+		function makeDiv (event){
+			var snowmanpart = document.createElement('div');
+			document.body.appendChild(snowmanpart)
+			snowmanpart.classList.add('part')
+			snowmanpart.style.position = "absolute"
+			snowmanpart.style.left = event.clientX-50 +"px"
+			snowmanpart.style.top = event.clientY-50 +"px"
+			// snowmanpart.style.width = "100px"
+			// snowmanpart.style.heigt = "100px"
+			snowmanpart.style.backgroundImage="url("+ part + ")"
+		}
+
+		)
+</script>
+</body>
+</html>
