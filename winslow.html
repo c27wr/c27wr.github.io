@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+	<style type="text/css">
+	body{
+		background-image:url(stabackground.png);
+				background-color: white;
+
+	}
+
+	#box1{
+
+
+	}
+	#home{
+		background-image:url(home.png);
+		width:75px;
+		height:75px;
+		background-size: contain;
+		background-repeat:no-repeat ;
+		display: inline-block;
+		position: absolute;
+		left:93%;
+		top:3%;
+	}
+	p3{
+		display: inline-block;
+		position: absolute;
+		color: white;
+		font-family: Comfortaa;
+		font-size: 50px;
+		right: 93%;
+
+	}
+	p{
+		font-family: Comfortaa;
+		font-size: 30px;
+		color: white;
+	}
+	p2{
+		font-family: Comfortaa;
+		font-size: 30px;
+		color: white;
+		position: ;
+	}
+	p4{
+		font-family: Comfortaa;
+		font-size: 30px;
+		color: white;
+		font-size: 20px;
+	}
+
+	.box{
+		text-align:center;
+		width:200px;
+		height:50px;
+		border:10px;
+		border: 2px solid black;
+		border-radius: 15px;
+		display: inline-block;
+		position:relative;
+		font-family: Teko;
+		background-color:white;
+	}
+
+	#stalogo{
+		width: 150px;
+		height: 150px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image:url(stalogo.png) ;
+		display: inline-block;
+		position: absolute;
+		left:87%;
+		top:90%;
+	}
+	#x{
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image:url(x.png) ;
+		display: inline-block;
+		position: absolute;
+		left:80%;
+		top:88%;
+	}
+	</style>
+</head>
+<body>
+	<p3>#3</p3>
+<center>
+<p>2008 GA</p>
+<p2><center>INDIVIDUAL PROGRESS WALL 23-24</center></p2>
+</center>
+<br>
+<p4>Name: Winslow Rowley</p4>
+<br>
+<p4>Position: Center Forward/Center Mid</p4>
+<a href="soccerpage.html">
+	<div id="home"></div>
+</a>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class="box" id="box1">score with inside of my foot         
+</div>
+<div class="box" id="box1">shoot 1x per game with non dominant foot</div>
+<div class="box" id="box1">go 1v1 3-5 times per half</div>
+<div class="box" id="box1">rotatations 5+ times per half</div>
+
+<div class="box" id="box1">press/force mistakes 10 times per half</div>
+
+<br>
+
+
+
+<div class="box" id="box1">2-3 first touch shots per game</div>
+<div class="box" id="box2">5 creative passes per game</div>
+<div class="box" id="box3">score off corner</div>
+<div class="box" id="box4">scan prior to recieving ball</div>
+<div class="box" id="box5">score from outside 18 x 1</div>
+<br>
+<div class="box" id="box6">1v1 vs goalie and score</div>
+<div class="box" id="box7">3-5 creative runs per half </div>
+<div class="box" id="box8">combos w center mids out of pressure</div>
+<div class="box" id="box9">score a header goal x 1</div>
+<div class="box" id="box10">5 headers/header possess per game</div>
+
+</center>
+<div id="stalogo"></div>
+<div id="x"></div>
+
+<script type="text/javascript">
+
+	// box.addEventListener("click", function(){
+	// 	box.style.backgroundColor="magenta"
+
+	// })
+
+	function addEventListenerToBox(x){
+		x.addEventListener("click", function(){
+			x.style.backgroundColor="magenta"
+		})
+
+	}
+
+	var boxes = Array.from(document.getElementsByClassName("box"))
+
+	console.log(boxes)
+
+
+	boxes.forEach(addEventListenerToBox)
+
+	
+</script>
+
+
+
+
+</body>
+</html>
